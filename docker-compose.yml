@@ -3,7 +3,7 @@ version: "3"
 services:
   # ChirpStack Network Server
   chirpstack:
-    image: chirpstack/chirpstack:4.0.4
+    image: chirpstack/chirpstack:4.0.5
     command: -c /etc/chirpstack
     restart: unless-stopped
     volumes:
@@ -33,7 +33,7 @@ services:
     environment:
       - SERVER=chirpstack:8080
       - BIND=0.0.0.0:8090
-      - INSECURE=true
+      - INSECURE=trueg
   # PostgreSQL
   postgres:
     image: postgres:14-alpine
