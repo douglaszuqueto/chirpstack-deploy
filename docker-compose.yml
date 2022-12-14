@@ -16,7 +16,7 @@ services:
       - 8080:8080
   # ChirpStack Gateway Bridge
   chirpstack-gateway-bridge:
-    image: chirpstack/chirpstack-gateway-bridge:4.0.2
+    image: chirpstack/chirpstack-gateway-bridge:4.0.3
     ports:
       - 1700:1700/udp
     volumes:
